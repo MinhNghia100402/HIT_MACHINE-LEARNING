@@ -22,7 +22,7 @@ def myGD(x0,learningrate):
             break
         x.append(x_new)
     return(x,i)
-(a,vt )= myGD(5,0.1)
+(a,vt )= myGD(10,0.1)
 print('các giá trị của x tìm được là ',a,'\n sau ',vt,' vòng lặp')
 axis = np.array(a)
 y = []
@@ -34,4 +34,5 @@ plt.plot(axis,y,marker='o',color='red')
 plt.title('THUẬT TOÁN GRADIENT DESCENT')
 plt.xlabel('x',color='red')
 plt.ylabel('y',color='red')
+plt.annotate(axis[-1],xy=(axis[-1],y[-1]),xytext=(axis[-1],y[-1]+4),arrowprops = dict(facecolor='red'))
 plt.show()

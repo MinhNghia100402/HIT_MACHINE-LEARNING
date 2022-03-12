@@ -28,6 +28,8 @@ axis = np.array(a)
 y = []
 for i in axis:
     y.append(grad(i))
+ ''' điểm local minium '''
+print('\nloccal minimum \n x ~ ',axis[-1],'\ny ~ ',y[-1])
 plt.plot(axis,y,marker='o',color='red')
 plt.title('THUẬT TOÁN GRADIENT DESCENT')
 plt.xlabel('x',color='red')

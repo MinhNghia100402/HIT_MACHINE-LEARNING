@@ -32,6 +32,7 @@ X1 = x[y_means == 1, :]
 X2 = x[y_means == 2, :]
 X3 = x[y_means == 3, :]
 X4 = x[y_means == 4, :]
+'''gán nhãn cho từng cụm'''
 def kmeans_display(X, label):
     plt.plot(X0[:, 0], X0[:, 1], 'b^', markersize = 10)
     plt.plot(X1[:, 0], X1[:, 1], 'go', markersize = 10)
